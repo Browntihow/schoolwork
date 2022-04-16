@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Stict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang = "zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>全屏滚动</title>
+<style type="text/css">
+html,body{  height: 100%;width: 100%;
+    margin: 0;  
+    padding: 0;  
+}  
+body{background:url(bg-login.png) ;
+    width:100%;
+    height:100%;
+    background-size:100% 100%;
+    position:absolute;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg-login.png',sizingMethod='scale');}
+#wrap{  
+    width: 100%;  
+    overflow: hidden;  
+    background: #ccc;  
+}  
+#main{  
+    width: 100%;  
+    background: #ccc;  
+    position: relative;  
+}  
+.page{  
+    width:100%;  
+    margin:0;  
+}  
+#page1{  
+    background-image: url('1.png');
+    background-position: center;
+    background-size: auto 100%;
+}  
+#page2{  
+     background-image: url('2.png');
+     background-position: center;
+     background-size: auto 100%;
+}  
+#page3{  
+    background-image: url('3.png');
+    background-position: center;
+    background-size: auto 100%;
+}  
+#page4{  
+    background-image: url('4.png');
+    background-position: center;
+    background-size: auto 100%; 
+    
+} 
+#page5{
+    background-image: url('down.png');
+    background-position: center;
+    background-size: auto 100%; 
+}
+#page6{
+    background-color: bisque;
+    background-position: center;
+}
+
+</style>
+<style>
+    p#p1{
+        position: absolute;
+        left: 80%;
+        font-size: 40px;
+    }
+    p#p2{
+        position: absolute;
+        left: 47%;
+        font-size: 15px;
+        color: rgba(255,255,255,0.5)
+        
+    }
+    p#p3{
+        position: absolute;
+        left: 20%;
+        font-size: 19px;
+    }
+    
+    p{font-family: '仿宋';}
+</style>
+</head>
+<body>
+<div id="wrap">  
+    <div id="main">  
+        <div id="page1" class="page">
+            <p id="p1">
+                <a href="https://www.bilibili.com/video/BV1TZ4y1T78h" target="_blank">
+                    <i>演讲</i>
+                </a>
+            </p>
+            <p id="p2">↓scroll↓</p>
+        </div>  
+        <div id="page2" class="page">
+            <p id="p1">
+                <a href="https://www.bilibili.com/video/BV1J34y1z7va" target="_blank" style="color: rgb(220, 20, 60,0.5);" >
+                    <i>革命</i>
+                </a>
+            </p>
+            <p id="p2">↓scroll↓</p>
+        </div>  
+        <div id="page3" class="page">
+            <p id="p1">
+                <a href="https://www.bilibili.com/video/BV1Sb4y1W7KY" target="_blank" style="color: rgb(0, 26, 255,0.5);" >
+                    <i>战争</i>
+                </a>
+            </p>
+            <p id="p2">↓scroll↓</p>
+        </div>  
+        <div id="page4" class="page">
+            <p id="p1">
+                <a href="https://baike.baidu.com/item/%E5%86%B7%E6%88%98%E9%A3%8E%E4%BA%91%E5%BD%95/19706324?fr=aladdin#1" target="_blank" style="color: rgb(253, 208, 5,0.5);" >
+                    <i>冷战</i>
+                </a>
+            </p>
+            <p id="p2">↓scroll↓</p>
+        </div> 
+        <div id="page5" class="page">
+            <p id="p1">
+                <a href="https://www.bilibili.com/video/BV1DR4y1W7bs" target="_blank" style="color: rgb(36, 1, 8,0.5);" >
+                    <i>解体</i>
+                </a>
+            </p>
+            <p id="p2">↓scroll↓</p>
+        </div> 
+        <div id="page6"  class="page">
+            <h3 id="p3">尾</h3>
+            <d id="p3">我只选取了几个具有代表性的事件关于苏联<br/>
+                然后这一些视频纪录片选自b站,本想弄一个纯净的播放窗口,没有评论,没有弹幕,但没办法<br/>
+                这个网页是我不停在百度,csdn,bilibili上找教程,完成的,依然还需要润色,但对于相关知识极其薄弱的我,实在为难<br/>
+                最早这个作业我是用一个制作网站的平台,然后找一个模板把素材套进去,可是对于发布这个网站,使用服务器,太难了<br/>
+                于是我转向github pages,托管,但时间不够了,也就放了几个图片在上面<br/>
+                现在2022春,因为疫情原因,已经推迟开学两个月了,我有了时间去完成这个作业了<br/>
+                (也只是粗糙的完成,跟我的预期相差还是很大,但没有什么才能的我只能做到这样了)<br/>
+                制作的过程,可以说是从零开始<br/>
+                如果说为什么要选择在自己不熟悉的领域,耗费精力,去制作这个网页作为作业<br/>
+                我的回答是:这真的很酷!<br/>
+            <br>
+            
+                此外,对于苏联,我无法恰当,概括性地评价它<br/>
+                我认同它对于科学的追求,对于崇高理念的追求,仅此而已<br/>
+                我并不是那个时代的人.
+            </d>
+        </div>
+    </div>      
+</div>
+<script>
+    var pages = document.getElementsByClassName("page");  
+    var wrap = document.getElementById("wrap");
+    var len = document.documentElement.clientHeight;  
+    var main = document.getElementById("main");  
+    wrap.style.height = len + "px";  
+    for(var i=0; i<pages.length; i++){  
+        pages[i].style.height = len + "px";  
+    }  
+    if(navigator.userAgent.toLowerCase().indexOf("firefox") != -1){  
+        document.addEventListener("DOMMouseScroll",scrollFun);  
+    }else if(document.addEventListener){  
+        document.addEventListener("mousewheel",scrollFun,false);  
+    }else if(document.attachEvent){  
+        document.attachEvent("onmousewheel",scrollFun);  
+    }else{  
+        document.onmousewheel = scrollFun;  
+    }  
+    var startTime = 0;  
+    var endTime = 0;  
+    var now = 0;  
+    function scrollFun(e){  
+        startTime = new Date().getTime();  
+        var event = e || window.event;  
+        var dir = event.detail || -event.wheelDelta;  
+        if(startTime - endTime > 1000){  
+            if(dir>0 && now > -5*len){  
+                now -= len;   
+                main.style.top = now +"px";  
+                endTime = new Date().getTime();  
+            }else if(dir<0 && now < 0){  
+                now += len;  
+                main.style.top = now +"px";  
+                endTime = new Date().getTime();  
+            }  
+        }else{  
+            event.preventDefault();      
+        }  
+    }  
+</script>  
+</body>
+</html>
